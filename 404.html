@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      var redirect = path + (search ? '&q=' + search.slice(1) : '') + hash;
+      sessionStorage.setItem('redirect', redirect);
+      window.location.replace('/atm-complaint-app/');
+    </script>
+  </head>
+  <body></body>
+</html>
